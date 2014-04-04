@@ -27,11 +27,12 @@
         <jobs>
           <job name="gitpush">
             <tasks>
-              <exec command="/bin/git">
+              <exec command="/bin/git" workingdir="local">
                 <arg>push</arg>
                 <arg>--mirror</arg>
                 <arg>--repo</arg>
                 <arg>https://tpbrown:nsight99@github.com/Tpbrown/sample-gocd-backup</arg>
+                <runif status="passed" />
               </exec>
             </tasks>
           </job>
