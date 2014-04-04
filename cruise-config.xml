@@ -19,5 +19,8 @@
       </stage>
     </pipeline>
   </pipelines>
+  <agents>
+    <agent hostname="go" ipaddress="127.0.0.1" uuid="bbddca50-58f1-40b6-af73-dd569577f92d" />
+  </agents>
 </cruise>
 
