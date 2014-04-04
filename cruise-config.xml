@@ -2,7 +2,7 @@
 <cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="69">
   <server artifactsdir="artifacts" commandRepositoryLocation="default" serverId="5a222723-041a-4eaa-ad93-1ab8d81da367" />
   <pipelines group="defaultGroup">
-    <pipeline name="timtest">
+    <pipeline name="timtest2">
       <materials>
         <git url="https://github.com/ThoughtWorksInc/ansible-gocd" />
       </materials>
