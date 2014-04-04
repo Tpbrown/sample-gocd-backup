@@ -20,7 +20,7 @@
     </pipeline>
     <pipeline name="go-config">
       <materials>
-        <git url="file:////var/lib/go-server/db/config.git/" />
+        <git url="file:////var/lib/go-server/db/config.git/" dest="local" />
       </materials>
       <stage name="push-to-remote">
         <jobs>
