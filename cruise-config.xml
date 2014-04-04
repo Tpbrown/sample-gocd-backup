@@ -18,6 +18,25 @@
         </jobs>
       </stage>
     </pipeline>
+    <pipeline name="go-config">
+      <materials>
+        <git url="file:////var/lib/go-server/db/config.git/" />
+      </materials>
+      <stage name="push-to-remote">
+        <jobs>
+          <job name="gitpush">
+            <tasks>
+              <exec command="/bin/git">
+                <arg>push</arg>
+                <arg>--mirror</arg>
+                <arg>--repo</arg>
+                <arg>https://tpbrown:nsight99@github.com/Tpbrown/sample-gocd-backup</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
   </pipelines>
   <agents>
     <agent hostname="go" ipaddress="10.0.2.15" uuid="bbddca50-58f1-40b6-af73-dd569577f92d" />
